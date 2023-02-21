@@ -25,6 +25,7 @@ const fs = require('fs');
 //     console.log("Folder Created");
 // })
 
+
 // if(!fs.existsSync('./assets')) {
 //     fs.mkdir('./assets', (err) => {
 //         if(err) {
@@ -42,6 +43,23 @@ const fs = require('fs');
 // }
 
 // deleting files
+
+// if(!fs.existsSync('./masila.txt')) {
+//     fs.writeFile('./masila.text', "Niaje buda", (err) => {
+//         if(err) {
+//             console.log(err);
+//         }
+//         console.log("File written to!");
+//     });
+
+// } else {
+//     fs.unlink('./masila.txt', (err) => {
+//         if(err) {
+//             console.log(err);
+//         }
+//         console.log("File written to!");
+//     });
+// }
 
 if(fs.existsSync('./assets/deleteme.txt')) {
     fs.unlink('./assets/deleteme.txt', (err) => {
